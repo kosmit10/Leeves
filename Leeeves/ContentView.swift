@@ -24,7 +24,7 @@ struct ContentView: View {
                             Spacer()
                             Line1()
                             Spacer()
-                            Line20()
+                            Line2()
                             Spacer()
                             Icon()
                             Spacer()
