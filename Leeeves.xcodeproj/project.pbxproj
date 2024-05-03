@@ -1,0 +1,807 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6313402D2BC024390040FF69 /* archive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6313402C2BC024390040FF69 /* archive.swift */; };
+		633D5CEE2BC445D90034BB72 /* Slide_menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633D5CED2BC445D90034BB72 /* Slide_menu.swift */; };
+		633E4EF12BBD4CA000CB4369 /* LeeevesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E4EF02BBD4CA000CB4369 /* LeeevesApp.swift */; };
+		633E4EF32BBD4CA000CB4369 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E4EF22BBD4CA000CB4369 /* ContentView.swift */; };
+		633E4EF52BBD4CA200CB4369 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633E4EF42BBD4CA200CB4369 /* Assets.xcassets */; };
+		633E4EF82BBD4CA200CB4369 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633E4EF72BBD4CA200CB4369 /* Preview Assets.xcassets */; };
+		633E4F022BBD4CA300CB4369 /* LeeevesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E4F012BBD4CA300CB4369 /* LeeevesTests.swift */; };
+		633E4F0C2BBD4CA400CB4369 /* LeeevesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E4F0B2BBD4CA400CB4369 /* LeeevesUITests.swift */; };
+		633E4F0E2BBD4CA400CB4369 /* LeeevesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E4F0D2BBD4CA400CB4369 /* LeeevesUITestsLaunchTests.swift */; };
+		633E4F1C2BBD4DDF00CB4369 /* shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E4F1B2BBD4DDF00CB4369 /* shop.swift */; };
+		633E4F1F2BBD4E0600CB4369 /* stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E4F1E2BBD4E0600CB4369 /* stories.swift */; };
+		633E4F232BBD4E6900CB4369 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E4F222BBD4E6900CB4369 /* LoginScreen.swift */; };
+		633E4F252BBD4E8500CB4369 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E4F242BBD4E8500CB4369 /* RegisterScreen.swift */; };
+		633E4F272BBD4E9D00CB4369 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633E4F262BBD4E9D00CB4369 /* Launch Screen.storyboard */; };
+		635626782BBD5CC70073318C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 635626772BBD5CC70073318C /* GoogleService-Info.plist */; };
+		6356267C2BBD5E270073318C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6356267B2BBD5E270073318C /* FirebaseAnalytics */; };
+		6356267E2BBD5E270073318C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6356267D2BBD5E270073318C /* FirebaseAuth */; };
+		635626802BBD5E270073318C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 6356267F2BBD5E270073318C /* FirebaseDatabase */; };
+		637148672BE4E5FD008DF1C1 /* wszytsko.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637148662BE4E5FD008DF1C1 /* wszytsko.swift */; };
+		637148692BE4E692008DF1C1 /* akcesoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637148682BE4E692008DF1C1 /* akcesoria.swift */; };
+		6371486B2BE4E78E008DF1C1 /* bluzy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371486A2BE4E78E008DF1C1 /* bluzy.swift */; };
+		6371486D2BE4E7CD008DF1C1 /* koszule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371486C2BE4E7CD008DF1C1 /* koszule.swift */; };
+		6371486F2BE4E806008DF1C1 /* koszulki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371486E2BE4E806008DF1C1 /* koszulki.swift */; };
+		637148712BE4E84A008DF1C1 /* kurtki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637148702BE4E84A008DF1C1 /* kurtki.swift */; };
+		637148732BE4E890008DF1C1 /* spodnie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637148722BE4E890008DF1C1 /* spodnie.swift */; };
+		637148752BE4EA15008DF1C1 /* swetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637148742BE4EA15008DF1C1 /* swetry.swift */; };
+		637BA39C2BD2578000B9432A /* data_product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637BA39B2BD2578000B9432A /* data_product.swift */; };
+		63A6913D2BC83B07001527E8 /* NoInternetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6913C2BC83B07001527E8 /* NoInternetView.swift */; };
+		63C75AB32BD989ED00D36EFE /* Scraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C75AB22BD989ED00D36EFE /* Scraper.swift */; };
+		63C75AB52BD98A2700D36EFE /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 63C75AB42BD98A2700D36EFE /* SwiftSoup */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		633E4EFE2BBD4CA300CB4369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 633E4EE52BBD4CA000CB4369 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 633E4EEC2BBD4CA000CB4369;
+			remoteInfo = Leeeves;
+		};
+		633E4F082BBD4CA400CB4369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 633E4EE52BBD4CA000CB4369 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 633E4EEC2BBD4CA000CB4369;
+			remoteInfo = Leeeves;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6313402C2BC024390040FF69 /* archive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = archive.swift; sourceTree = "<group>"; };
+		633D5CED2BC445D90034BB72 /* Slide_menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide_menu.swift; sourceTree = "<group>"; };
+		633E4EED2BBD4CA000CB4369 /* Leeeves.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leeeves.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		633E4EF02BBD4CA000CB4369 /* LeeevesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeeevesApp.swift; sourceTree = "<group>"; };
+		633E4EF22BBD4CA000CB4369 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		633E4EF42BBD4CA200CB4369 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		633E4EF72BBD4CA200CB4369 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		633E4EFD2BBD4CA300CB4369 /* LeeevesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeeevesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		633E4F012BBD4CA300CB4369 /* LeeevesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeeevesTests.swift; sourceTree = "<group>"; };
+		633E4F072BBD4CA400CB4369 /* LeeevesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeeevesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		633E4F0B2BBD4CA400CB4369 /* LeeevesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeeevesUITests.swift; sourceTree = "<group>"; };
+		633E4F0D2BBD4CA400CB4369 /* LeeevesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeeevesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		633E4F1B2BBD4DDF00CB4369 /* shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shop.swift; sourceTree = "<group>"; };
+		633E4F1E2BBD4E0600CB4369 /* stories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stories.swift; sourceTree = "<group>"; };
+		633E4F222BBD4E6900CB4369 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		633E4F242BBD4E8500CB4369 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		633E4F262BBD4E9D00CB4369 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../../../leeves/Leeves/Leeves/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		635626772BBD5CC70073318C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		635626792BBD5E150073318C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		637148662BE4E5FD008DF1C1 /* wszytsko.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wszytsko.swift; sourceTree = "<group>"; };
+		637148682BE4E692008DF1C1 /* akcesoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = akcesoria.swift; sourceTree = "<group>"; };
+		6371486A2BE4E78E008DF1C1 /* bluzy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bluzy.swift; sourceTree = "<group>"; };
+		6371486C2BE4E7CD008DF1C1 /* koszule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = koszule.swift; sourceTree = "<group>"; };
+		6371486E2BE4E806008DF1C1 /* koszulki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = koszulki.swift; sourceTree = "<group>"; };
+		637148702BE4E84A008DF1C1 /* kurtki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kurtki.swift; sourceTree = "<group>"; };
+		637148722BE4E890008DF1C1 /* spodnie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spodnie.swift; sourceTree = "<group>"; };
+		637148742BE4EA15008DF1C1 /* swetry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swetry.swift; sourceTree = "<group>"; };
+		637BA39B2BD2578000B9432A /* data_product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data_product.swift; sourceTree = "<group>"; };
+		63A6913C2BC83B07001527E8 /* NoInternetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetView.swift; sourceTree = "<group>"; };
+		63C75AB22BD989ED00D36EFE /* Scraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scraper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		633E4EEA2BBD4CA000CB4369 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				635626802BBD5E270073318C /* FirebaseDatabase in Frameworks */,
+				63C75AB52BD98A2700D36EFE /* SwiftSoup in Frameworks */,
+				6356267C2BBD5E270073318C /* FirebaseAnalytics in Frameworks */,
+				6356267E2BBD5E270073318C /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633E4EFA2BBD4CA300CB4369 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633E4F042BBD4CA400CB4369 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		630ED8C22BE4E24B00D38858 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				637148662BE4E5FD008DF1C1 /* wszytsko.swift */,
+				637148682BE4E692008DF1C1 /* akcesoria.swift */,
+				6371486A2BE4E78E008DF1C1 /* bluzy.swift */,
+				6371486C2BE4E7CD008DF1C1 /* koszule.swift */,
+				6371486E2BE4E806008DF1C1 /* koszulki.swift */,
+				637148702BE4E84A008DF1C1 /* kurtki.swift */,
+				637148722BE4E890008DF1C1 /* spodnie.swift */,
+				637148742BE4EA15008DF1C1 /* swetry.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		631340292BC023F00040FF69 /* Archive */ = {
+			isa = PBXGroup;
+			children = (
+				6313402C2BC024390040FF69 /* archive.swift */,
+			);
+			path = Archive;
+			sourceTree = "<group>";
+		};
+		633D5CE82BC4437D0034BB72 /* slidemenu */ = {
+			isa = PBXGroup;
+			children = (
+				633D5CED2BC445D90034BB72 /* Slide_menu.swift */,
+			);
+			path = slidemenu;
+			sourceTree = "<group>";
+		};
+		633E4EE42BBD4CA000CB4369 = {
+			isa = PBXGroup;
+			children = (
+				63C75AB12BD989A400D36EFE /* Scraper */,
+				633E4EEF2BBD4CA000CB4369 /* Leeeves */,
+				633E4F002BBD4CA300CB4369 /* LeeevesTests */,
+				633E4F0A2BBD4CA400CB4369 /* LeeevesUITests */,
+				633E4EEE2BBD4CA000CB4369 /* Products */,
+				6356267A2BBD5E270073318C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		633E4EEE2BBD4CA000CB4369 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				633E4EED2BBD4CA000CB4369 /* Leeeves.app */,
+				633E4EFD2BBD4CA300CB4369 /* LeeevesTests.xctest */,
+				633E4F072BBD4CA400CB4369 /* LeeevesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		633E4EEF2BBD4CA000CB4369 /* Leeeves */ = {
+			isa = PBXGroup;
+			children = (
+				630ED8C22BE4E24B00D38858 /* Category */,
+				637BA39A2BD2575600B9432A /* Data_product */,
+				63A691392BC83A7F001527E8 /* connnection */,
+				633D5CE82BC4437D0034BB72 /* slidemenu */,
+				631340292BC023F00040FF69 /* Archive */,
+				635626792BBD5E150073318C /* Info.plist */,
+				633E4F1D2BBD4DF700CB4369 /* Stories */,
+				633E4F1A2BBD4DB900CB4369 /* Shop */,
+				633E4EF02BBD4CA000CB4369 /* LeeevesApp.swift */,
+				633E4EF22BBD4CA000CB4369 /* ContentView.swift */,
+				635626772BBD5CC70073318C /* GoogleService-Info.plist */,
+				633E4EF42BBD4CA200CB4369 /* Assets.xcassets */,
+				633E4EF62BBD4CA200CB4369 /* Preview Content */,
+			);
+			path = Leeeves;
+			sourceTree = "<group>";
+		};
+		633E4EF62BBD4CA200CB4369 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				633E4EF72BBD4CA200CB4369 /* Preview Assets.xcassets */,
+				633E4F222BBD4E6900CB4369 /* LoginScreen.swift */,
+				633E4F242BBD4E8500CB4369 /* RegisterScreen.swift */,
+				633E4F262BBD4E9D00CB4369 /* Launch Screen.storyboard */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		633E4F002BBD4CA300CB4369 /* LeeevesTests */ = {
+			isa = PBXGroup;
+			children = (
+				633E4F012BBD4CA300CB4369 /* LeeevesTests.swift */,
+			);
+			path = LeeevesTests;
+			sourceTree = "<group>";
+		};
+		633E4F0A2BBD4CA400CB4369 /* LeeevesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				633E4F0B2BBD4CA400CB4369 /* LeeevesUITests.swift */,
+				633E4F0D2BBD4CA400CB4369 /* LeeevesUITestsLaunchTests.swift */,
+			);
+			path = LeeevesUITests;
+			sourceTree = "<group>";
+		};
+		633E4F1A2BBD4DB900CB4369 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				633E4F1B2BBD4DDF00CB4369 /* shop.swift */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		633E4F1D2BBD4DF700CB4369 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				633E4F1E2BBD4E0600CB4369 /* stories.swift */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+		6356267A2BBD5E270073318C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		637BA39A2BD2575600B9432A /* Data_product */ = {
+			isa = PBXGroup;
+			children = (
+				637BA39B2BD2578000B9432A /* data_product.swift */,
+			);
+			path = Data_product;
+			sourceTree = "<group>";
+		};
+		63A691392BC83A7F001527E8 /* connnection */ = {
+			isa = PBXGroup;
+			children = (
+				63A6913C2BC83B07001527E8 /* NoInternetView.swift */,
+			);
+			path = connnection;
+			sourceTree = "<group>";
+		};
+		63C75AB12BD989A400D36EFE /* Scraper */ = {
+			isa = PBXGroup;
+			children = (
+				63C75AB22BD989ED00D36EFE /* Scraper.swift */,
+			);
+			path = Scraper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		633E4EEC2BBD4CA000CB4369 /* Leeeves */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 633E4F112BBD4CA400CB4369 /* Build configuration list for PBXNativeTarget "Leeeves" */;
+			buildPhases = (
+				633E4EE92BBD4CA000CB4369 /* Sources */,
+				633E4EEA2BBD4CA000CB4369 /* Frameworks */,
+				633E4EEB2BBD4CA000CB4369 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Leeeves;
+			packageProductDependencies = (
+				6356267B2BBD5E270073318C /* FirebaseAnalytics */,
+				6356267D2BBD5E270073318C /* FirebaseAuth */,
+				6356267F2BBD5E270073318C /* FirebaseDatabase */,
+				63C75AB42BD98A2700D36EFE /* SwiftSoup */,
+			);
+			productName = Leeeves;
+			productReference = 633E4EED2BBD4CA000CB4369 /* Leeeves.app */;
+			productType = "com.apple.product-type.application";
+		};
+		633E4EFC2BBD4CA300CB4369 /* LeeevesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 633E4F142BBD4CA400CB4369 /* Build configuration list for PBXNativeTarget "LeeevesTests" */;
+			buildPhases = (
+				633E4EF92BBD4CA300CB4369 /* Sources */,
+				633E4EFA2BBD4CA300CB4369 /* Frameworks */,
+				633E4EFB2BBD4CA300CB4369 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				633E4EFF2BBD4CA300CB4369 /* PBXTargetDependency */,
+			);
+			name = LeeevesTests;
+			productName = LeeevesTests;
+			productReference = 633E4EFD2BBD4CA300CB4369 /* LeeevesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		633E4F062BBD4CA400CB4369 /* LeeevesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 633E4F172BBD4CA400CB4369 /* Build configuration list for PBXNativeTarget "LeeevesUITests" */;
+			buildPhases = (
+				633E4F032BBD4CA400CB4369 /* Sources */,
+				633E4F042BBD4CA400CB4369 /* Frameworks */,
+				633E4F052BBD4CA400CB4369 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				633E4F092BBD4CA400CB4369 /* PBXTargetDependency */,
+			);
+			name = LeeevesUITests;
+			productName = LeeevesUITests;
+			productReference = 633E4F072BBD4CA400CB4369 /* LeeevesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		633E4EE52BBD4CA000CB4369 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					633E4EEC2BBD4CA000CB4369 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					633E4EFC2BBD4CA300CB4369 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 633E4EEC2BBD4CA000CB4369;
+					};
+					633E4F062BBD4CA400CB4369 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 633E4EEC2BBD4CA000CB4369;
+					};
+				};
+			};
+			buildConfigurationList = 633E4EE82BBD4CA000CB4369 /* Build configuration list for PBXProject "Leeeves" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 633E4EE42BBD4CA000CB4369;
+			packageReferences = (
+				633E4F282BBD537900CB4369 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				63C75AB02BD9896F00D36EFE /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
+			productRefGroup = 633E4EEE2BBD4CA000CB4369 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				633E4EEC2BBD4CA000CB4369 /* Leeeves */,
+				633E4EFC2BBD4CA300CB4369 /* LeeevesTests */,
+				633E4F062BBD4CA400CB4369 /* LeeevesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		633E4EEB2BBD4CA000CB4369 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633E4EF82BBD4CA200CB4369 /* Preview Assets.xcassets in Resources */,
+				635626782BBD5CC70073318C /* GoogleService-Info.plist in Resources */,
+				633E4EF52BBD4CA200CB4369 /* Assets.xcassets in Resources */,
+				633E4F272BBD4E9D00CB4369 /* Launch Screen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633E4EFB2BBD4CA300CB4369 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633E4F052BBD4CA400CB4369 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		633E4EE92BBD4CA000CB4369 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637148732BE4E890008DF1C1 /* spodnie.swift in Sources */,
+				6313402D2BC024390040FF69 /* archive.swift in Sources */,
+				633E4F252BBD4E8500CB4369 /* RegisterScreen.swift in Sources */,
+				633E4F1C2BBD4DDF00CB4369 /* shop.swift in Sources */,
+				633E4F1F2BBD4E0600CB4369 /* stories.swift in Sources */,
+				637148692BE4E692008DF1C1 /* akcesoria.swift in Sources */,
+				6371486F2BE4E806008DF1C1 /* koszulki.swift in Sources */,
+				633E4EF32BBD4CA000CB4369 /* ContentView.swift in Sources */,
+				633E4EF12BBD4CA000CB4369 /* LeeevesApp.swift in Sources */,
+				637BA39C2BD2578000B9432A /* data_product.swift in Sources */,
+				633D5CEE2BC445D90034BB72 /* Slide_menu.swift in Sources */,
+				63C75AB32BD989ED00D36EFE /* Scraper.swift in Sources */,
+				637148712BE4E84A008DF1C1 /* kurtki.swift in Sources */,
+				6371486B2BE4E78E008DF1C1 /* bluzy.swift in Sources */,
+				633E4F232BBD4E6900CB4369 /* LoginScreen.swift in Sources */,
+				637148752BE4EA15008DF1C1 /* swetry.swift in Sources */,
+				63A6913D2BC83B07001527E8 /* NoInternetView.swift in Sources */,
+				637148672BE4E5FD008DF1C1 /* wszytsko.swift in Sources */,
+				6371486D2BE4E7CD008DF1C1 /* koszule.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633E4EF92BBD4CA300CB4369 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633E4F022BBD4CA300CB4369 /* LeeevesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633E4F032BBD4CA400CB4369 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633E4F0E2BBD4CA400CB4369 /* LeeevesUITestsLaunchTests.swift in Sources */,
+				633E4F0C2BBD4CA400CB4369 /* LeeevesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		633E4EFF2BBD4CA300CB4369 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 633E4EEC2BBD4CA000CB4369 /* Leeeves */;
+			targetProxy = 633E4EFE2BBD4CA300CB4369 /* PBXContainerItemProxy */;
+		};
+		633E4F092BBD4CA400CB4369 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 633E4EEC2BBD4CA000CB4369 /* Leeeves */;
+			targetProxy = 633E4F082BBD4CA400CB4369 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		633E4F0F2BBD4CA400CB4369 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		633E4F102BBD4CA400CB4369 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		633E4F122BBD4CA400CB4369 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Leeeves/Preview Content\"";
+				DEVELOPMENT_TEAM = YVMQJJY3N2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Leeeves/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.Leeeves;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		633E4F132BBD4CA400CB4369 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Leeeves/Preview Content\"";
+				DEVELOPMENT_TEAM = YVMQJJY3N2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Leeeves/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.Leeeves;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		633E4F152BBD4CA400CB4369 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YVMQJJY3N2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.LeeevesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Leeeves.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Leeeves";
+			};
+			name = Debug;
+		};
+		633E4F162BBD4CA400CB4369 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YVMQJJY3N2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.LeeevesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Leeeves.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Leeeves";
+			};
+			name = Release;
+		};
+		633E4F182BBD4CA400CB4369 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YVMQJJY3N2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.LeeevesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Leeeves;
+			};
+			name = Debug;
+		};
+		633E4F192BBD4CA400CB4369 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YVMQJJY3N2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.LeeevesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Leeeves;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		633E4EE82BBD4CA000CB4369 /* Build configuration list for PBXProject "Leeeves" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				633E4F0F2BBD4CA400CB4369 /* Debug */,
+				633E4F102BBD4CA400CB4369 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		633E4F112BBD4CA400CB4369 /* Build configuration list for PBXNativeTarget "Leeeves" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				633E4F122BBD4CA400CB4369 /* Debug */,
+				633E4F132BBD4CA400CB4369 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		633E4F142BBD4CA400CB4369 /* Build configuration list for PBXNativeTarget "LeeevesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				633E4F152BBD4CA400CB4369 /* Debug */,
+				633E4F162BBD4CA400CB4369 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		633E4F172BBD4CA400CB4369 /* Build configuration list for PBXNativeTarget "LeeevesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				633E4F182BBD4CA400CB4369 /* Debug */,
+				633E4F192BBD4CA400CB4369 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		633E4F282BBD537900CB4369 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 10.23.1;
+			};
+		};
+		63C75AB02BD9896F00D36EFE /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.7.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6356267B2BBD5E270073318C /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 633E4F282BBD537900CB4369 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		6356267D2BBD5E270073318C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 633E4F282BBD537900CB4369 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		6356267F2BBD5E270073318C /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 633E4F282BBD537900CB4369 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		63C75AB42BD98A2700D36EFE /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63C75AB02BD9896F00D36EFE /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 633E4EE52BBD4CA000CB4369 /* Project object */;
+}
