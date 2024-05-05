@@ -34,7 +34,7 @@
 		637148732BE4E890008DF1C1 /* spodnie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637148722BE4E890008DF1C1 /* spodnie.swift */; };
 		637148752BE4EA15008DF1C1 /* swetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637148742BE4EA15008DF1C1 /* swetry.swift */; };
 		637BA39C2BD2578000B9432A /* data_product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637BA39B2BD2578000B9432A /* data_product.swift */; };
-		639F02382BE6131E00A31242 /* product_shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639F02372BE6131E00A31242 /* product_shop.swift */; };
+		639F02382BE6131E00A31242 /* ProductShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639F02372BE6131E00A31242 /* ProductShopView.swift */; };
 		63A6913D2BC83B07001527E8 /* NoInternetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6913C2BC83B07001527E8 /* NoInternetView.swift */; };
 		63C75AB32BD989ED00D36EFE /* Scraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C75AB22BD989ED00D36EFE /* Scraper.swift */; };
 		63C75AB52BD98A2700D36EFE /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 63C75AB42BD98A2700D36EFE /* SwiftSoup */; };
@@ -86,7 +86,7 @@
 		637148722BE4E890008DF1C1 /* spodnie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spodnie.swift; sourceTree = "<group>"; };
 		637148742BE4EA15008DF1C1 /* swetry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swetry.swift; sourceTree = "<group>"; };
 		637BA39B2BD2578000B9432A /* data_product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data_product.swift; sourceTree = "<group>"; };
-		639F02372BE6131E00A31242 /* product_shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = product_shop.swift; sourceTree = "<group>"; };
+		639F02372BE6131E00A31242 /* ProductShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductShopView.swift; sourceTree = "<group>"; };
 		63A6913C2BC83B07001527E8 /* NoInternetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetView.swift; sourceTree = "<group>"; };
 		63C75AB22BD989ED00D36EFE /* Scraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scraper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -256,7 +256,7 @@
 		639F02342BE6130300A31242 /* Product */ = {
 			isa = PBXGroup;
 			children = (
-				639F02372BE6131E00A31242 /* product_shop.swift */,
+				639F02372BE6131E00A31242 /* ProductShopView.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -426,7 +426,7 @@
 				633E4F1F2BBD4E0600CB4369 /* stories.swift in Sources */,
 				637148692BE4E692008DF1C1 /* akcesoria.swift in Sources */,
 				6371486F2BE4E806008DF1C1 /* koszulki.swift in Sources */,
-				639F02382BE6131E00A31242 /* product_shop.swift in Sources */,
+				639F02382BE6131E00A31242 /* ProductShopView.swift in Sources */,
 				633E4EF32BBD4CA000CB4369 /* ContentView.swift in Sources */,
 				633E4EF12BBD4CA000CB4369 /* LeeevesApp.swift in Sources */,
 				637BA39C2BD2578000B9432A /* data_product.swift in Sources */,

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct wszystko: View {
+    @State private var isProductShopViewPresented = false
     @Binding var products: [Product]
     @Binding var isLoading: Bool
     @Binding var errorMessage: String?
@@ -17,6 +18,7 @@ struct wszystko: View {
     var corners : UIRectCorner = [.topLeft,.topRight,.bottomLeft,.bottomRight]
 
     var body: some View {
+        
         VStack{
             if isLoading {
                 ProgressView()
@@ -26,7 +28,13 @@ struct wszystko: View {
                     .padding()
             } else {
                 ForEach(products) { product in
-                    Button(action: {}){
+                    Button(action: {
+                        isProductShopViewPresented = true
+                    }){
+                        NavigationLink(
+                            destination: ProductShopView(product: product),
+                            isActive: $isProductShopViewPresented
+                        )
                         VStack {
                             AsyncImage(url: URL(string: product.imageUrl)) { image in
                                 image
