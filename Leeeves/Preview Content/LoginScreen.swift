@@ -16,13 +16,15 @@ struct LoginScreen: View {
     @State private var wrongPassword = false
     @State private var showingLoginscreen = false
     @State private var isregisterscreenPresented = false
+    @State private var showAlert = false
+    @State private var alertMessage = ""
 
     var body: some View {
         NavigationView {
             ZStack {
                 Color(red: 238/255, green: 228/255, blue: 192/255)
                 RoundedRectangle(cornerRadius: 30, style: .continuous)
-                                    .foregroundStyle(.linearGradient(colors: [     Color(red: 16/255, green: 71/255, blue: 52/255), Color(red: 50/255, green: 70/255, blue: 10/255)], startPoint: .topLeading, endPoint: .bottomLeading))
+                    .foregroundStyle(.linearGradient(colors: [     Color(red: 16/255, green: 71/255, blue: 52/255), Color(red: 50/255, green: 70/255, blue: 10/255)], startPoint: .topLeading, endPoint: .bottomLeading))
                                     .frame().frame(width: 1000, height: 500)
                                     .rotationEffect(.degrees(135))
                                     .offset(y:20)
@@ -31,16 +33,16 @@ struct LoginScreen: View {
                     Spacer()
                     
                     HStack {
-                        Image("logo")
+                        Image("logomal")
                             .resizable()
-                            .frame(width: 110, height: 100)
-                            .padding(.trailing, -20.0)
+                            .frame(width: 230, height: 80)
+                            .padding()
                         
-                        Text("eeves")
-                            .padding(.top, 40.0)
-                            .font(.system(size: 50))
-                            .foregroundColor(Color(red: 238/255, green: 228/255, blue: 192/255))
-                            .padding(.vertical, 10.0)
+//                        Text("eeves")
+//                            .padding(.top, 40.0)
+//                            .font(.system(size: 50))
+//                            .foregroundColor(Color(red: 238/255, green: 228/255, blue: 192/255))
+//                            .padding(.vertical, 10.0)
                     }
                     .padding()
                     
@@ -110,6 +112,17 @@ struct LoginScreen: View {
     }
     
     func login() {
+        if username.isEmpty || password.isEmpty {
+                   alertMessage = "Please enter both username and password."
+                   showAlert = true
+                   return
+               }
+               
+               if !username.contains("@") {
+                   alertMessage = "Username must be an email address."
+                   showAlert = true
+                   return
+               }
         Auth.auth().signIn(withEmail: username, password: password) { result, error in
             if error == nil {
                 showingLoginscreen = true
@@ -117,6 +130,10 @@ struct LoginScreen: View {
                 print(error!.localizedDescription)
             }
         }
+    }
+    func showAlert(message: String) {
+        alertMessage = message
+        showAlert = true
     }
 }
 

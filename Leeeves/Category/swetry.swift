@@ -25,7 +25,9 @@ struct swetry: View {
                     .padding()
             } else {
                 ForEach(products) { product in
-                    Button(action: {}){
+                    NavigationLink(
+                        destination: ProductShopView(product: product)
+                        ) {
                         VStack {
                             AsyncImage(url: URL(string: product.imageUrl)) { image in
                                 image

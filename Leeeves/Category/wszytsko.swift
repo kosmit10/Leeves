@@ -9,6 +9,7 @@ import SwiftUI
 
 struct wszystko: View {
     @State private var isProductShopViewPresented = false
+    @State private var selectedProduct: Product?
     @Binding var products: [Product]
     @Binding var isLoading: Bool
     @Binding var errorMessage: String?
@@ -28,13 +29,9 @@ struct wszystko: View {
                     .padding()
             } else {
                 ForEach(products) { product in
-                    Button(action: {
-                        isProductShopViewPresented = true
-                    }){
-                        NavigationLink(
-                            destination: ProductShopView(product: product),
-                            isActive: $isProductShopViewPresented
-                        )
+                    NavigationLink(
+                        destination: ProductShopView(product: product)
+                        ) {
                         VStack {
                             AsyncImage(url: URL(string: product.imageUrl)) { image in
                                 image

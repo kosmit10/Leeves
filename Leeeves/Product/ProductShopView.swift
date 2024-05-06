@@ -62,7 +62,7 @@ struct ProductShopView: View {
                                         .strikethrough()
                                         .foregroundColor(Color.gray)
                                         .font(.title3)
-                                    Text("\(salePrice),00zł")
+                                    Text("\(salePrice)")
                                         .foregroundColor(Color(colorJasny))
                                 }
                                 .padding(.top, -10.0)
@@ -76,20 +76,29 @@ struct ProductShopView: View {
                             
                             if productDetail.sizes.isEmpty {
                                 Text("ONE SIZE")
-                                    .padding()
-                                //                            DOKONCZYC!!
+                                    .frame(width: 90, height: 30)
+                                    .padding(.top, 10.0)
+                                    .padding(.bottom, 10.0)
+                                    .background(Color(colorJasny))
+                                    .foregroundColor(.black)
+                                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                                    .font(.system(size: 15))
+                                    .shadow(color: colorJasny, radius: 4, x: 0, y: 0)
+                                
                             }
                             else {
                                 HStack(spacing: 2) {
-                                    ForEach(productDetail.sizes, id: \.self) {size in
-                                        Text(size)
-                                            .padding()
-                                            .background(Color(colorJasny))
-                                            .foregroundColor(.black)
-                                            .clipShape(RoundedRectangle(cornerRadius: 15))
-                                            .frame(width: 50, height: 30)
-                                            .font(.system(size: 10))
-                                        
+                                        ForEach(productDetail.sizes, id: \.self) {size in
+                                            Button(action: {}){
+                                            Text(size)
+                                                .padding()
+                                                .background(Color(colorJasny))
+                                                .foregroundColor(.black)
+                                                .clipShape(RoundedRectangle(cornerRadius: 15))
+                                                .frame(width: 50, height: 30)
+                                                .font(.system(size: 13))
+                                                .shadow(color: colorJasny, radius: 4, x: 0, y: 0)
+                                        }
                                     }
                                 }
                                 .padding()
@@ -142,9 +151,13 @@ struct ProductShopView: View {
                                     Text("BUY NOW")
                                     Image(systemName: "basket.fill")
                                 }
-                                .padding(.top, -20.0)
-                                .foregroundColor(Color(colorJasny))
+                                .frame(width: 210, height: 70)
+                                .background(Color(colorJasny))
+                                .foregroundColor(Color.black)
                                 .font(.system(size: 25))
+                                .clipShape(RoundedRectangle(cornerRadius: 10))
+                                .shadow(color: colorJasny, radius: 6, x: 0, y: 0)
+                                .padding(.top, -20.0)
                             }
                         }
                     }
