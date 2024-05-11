@@ -1,8 +1,9 @@
 import SwiftUI
 
 struct Slide_menu: View {
-    let color = (Color(red: 238/255, green: 228/255, blue: 192/255))
+    let color = (Color(red: 16/255, green: 71/255, blue: 52/255))
     let zielony = Color(red: 50/255, green: 70/255, blue: 10/255)
+    let tekst = Color(red: 238/255, green: 228/255, blue: 192/255)
     var screenWidth = UIScreen.main.bounds.width
     @State var xOffset: CGFloat = 0
     @State var currentXOffset: CGFloat = 0
@@ -18,7 +19,7 @@ struct Slide_menu: View {
                             Image("logo")
                                 .resizable()
                                 .frame(width: 80, height: 70)
-                                .foregroundColor(zielony)
+                                .foregroundColor(tekst)
                         }
                         .padding(.top, 80.0)
                     }
@@ -26,57 +27,59 @@ struct Slide_menu: View {
                     VStack{
                         Rectangle()
                             .frame(width: 200, height: 2 )
-                            .foregroundColor(zielony)
+                            .foregroundColor(tekst)
                         HStack{
                             Text("Options")
                                 .font(.system(size: 25))
-                                .foregroundColor(zielony)
+                                .foregroundColor(tekst)
                             Image(systemName: "gear")
-                                .foregroundColor(zielony)
+                                .foregroundColor(tekst)
                                 .font(.system(size: 25))
                         }
                         Rectangle()
                             .frame(width: 200, height: 2 )
-                            .foregroundColor(zielony)
+                            .foregroundColor(tekst)
                     }
                     VStack{
                         HStack{
                             Text("Delivery")
                                 .font(.system(size: 25))
-                                .foregroundColor(zielony)
+                                .foregroundColor(tekst)
                             Image(systemName: "shippingbox.fill")
-                                .foregroundColor(zielony)
+                                .foregroundColor(tekst)
                                 .font(.system(size: 25))
                         }
                         Rectangle()
                             .frame(width: 200, height: 2 )
-                            .foregroundColor(zielony)
+                            .foregroundColor(tekst)
                     }
                     VStack{
                         HStack{
                             Text("About Me")
                                 .font(.system(size: 25))
-                                .foregroundColor(zielony)
+                                .foregroundColor(tekst)
                             Image(systemName: "person.fill")
-                                .foregroundColor(zielony)
+                                .foregroundColor(tekst)
                                 .font(.system(size: 25))
                         }
                         Rectangle()
                             .frame(width: 200, height: 2 )
-                            .foregroundColor(zielony)
+                            .foregroundColor(tekst)
                     }
                     VStack{
-                        HStack{
-                            Text("Favorite")
-                                .foregroundColor(zielony)
-                                .font(.system(size: 25))
-                            Image(systemName: "star.fill")
-                                .foregroundColor(zielony)
-                                .font(.system(size: 25))
+                        Button(action: {}){
+                            HStack{
+                                Text("Shop basket")
+                                    .foregroundColor(tekst)
+                                    .font(.system(size: 25))
+                                Image(systemName: "basket.fill")
+                                    .foregroundColor(tekst)
+                                    .font(.system(size: 25))
+                            }
                         }
                         Rectangle()
                             .frame(width: 200, height: 2 )
-                            .foregroundColor(zielony)
+                            .foregroundColor(tekst)
                     }
                     VStack{
                         Image("prof")
@@ -84,6 +87,7 @@ struct Slide_menu: View {
                             .frame(width: 120, height: 120)
                             .cornerRadius(15.0)
                         Text("@maciura")
+                            .foregroundColor(tekst)
                     }
                     Spacer()
                 }

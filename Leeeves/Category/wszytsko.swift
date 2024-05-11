@@ -73,8 +73,8 @@ struct wszystko: View {
                 }
             }
         }
+        .padding(10.0)
         Spacer()
-        .padding()
         .onAppear {
             self.loadProducts()
         }
@@ -88,6 +88,7 @@ struct wszystko: View {
             )
         }
     }
+    
     
     private func loadProducts() {
         isLoading = true

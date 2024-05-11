@@ -76,7 +76,7 @@ struct shop: View {
                         }
                     }
                 }
-                .padding(.top, 0.0)
+                .padding(.top, -30.0)
                 Spacer()
             }
             .navigationBarBackButtonHidden(true)
